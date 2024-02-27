@@ -1,4 +1,4 @@
-const quotes = document.querySelector('#quote');
+const quote = document.querySelector('#quote');
 const author = document.querySelector('#author');
 const btn = document.querySelector('#new-quote');
 
@@ -9,7 +9,7 @@ async function getQuote() {
      console.log(data[0]);
      console.log("author", data[0].author);
      console.log("content", data[0].content);
-     quotes.textContent = data[0].content;
+     quote.textContent = " "+ data[0].content;
      author.textContent = "-"+" "+data[0].author;
 }
 
